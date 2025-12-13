@@ -23,11 +23,11 @@ header {
 
 header img {
     filter: drop-shadow(0px 0px 2px whitesmoke);
-    animation: logo 12s;
+    animation: transicao 12s ;
     animation-iteration-count: 1;
 }
 
-@keyframes logo {
+@keyframes transicao {
     0% {
         filter: drop-shadow(0px 0px 1px #001e49);
     }
@@ -89,12 +89,12 @@ h2 {
     transition: 1.3s;
 }
 
-#contato button:hover{
+#contato button:hover {
     color: black;
     background-color: rgb(223, 223, 223);
 }
 
-.portfolio{
+.portfolio {
     gap: 15px;
     display: flex;
     flex-direction: column;
@@ -102,7 +102,7 @@ h2 {
 
 }
 
-.videos{
+.videos {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
