@@ -47,6 +47,10 @@ main {
     flex: 1;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
     text-align: center;
 }
 
@@ -61,6 +65,7 @@ main {
     padding-bottom: 50px;
     animation: opacidade 3s;
     animation-iteration-count: 1;
+    text-align: center;
 }
 
 h1,
@@ -103,6 +108,7 @@ h2 {
     justify-content: center;
     animation: opacidade 3s;
     animation-iteration-count: 1;
+    text-align: center;
 }
 
 @keyframes opacidade {
