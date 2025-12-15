@@ -20,13 +20,28 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    height: 100dvh;
+    background-color: rgb(14, 14, 14);
+    gap: 20px;
 }
 
 header img {
-    animation: 
-    transicao 10s infinite,
-    opacidade 3s forwards;
-    
+    width: 400px;
+    animation:
+        transicao 10s infinite,
+        opacidade 3s forwards;
+    filter: drop-shadow(0px 0px 4px whitesmoke);
+    padding: 20px;
+
+}
+
+header h1,
+header h2 {
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: movimentobaixopracima 12s;
+    animation-iteration-count: 1;
 }
 
 @keyframes transicao {
@@ -106,13 +121,15 @@ h2 {
 }
 
 .portfolio {
-    gap: 15px;
+    gap: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     animation: opacidade 3s;
     animation-iteration-count: 1;
     text-align: center;
+    min-height: 100dvh;
+    padding: 20px;
 }
 
 @keyframes opacidade {
@@ -126,7 +143,10 @@ h2 {
 }
 
 .videos {
+    align-items: center;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
@@ -145,4 +165,16 @@ footer {
     font-size: 19px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+
+@media screen and (max-width: 700px) {
+    header img {
+        width: 290px;
+    }
+
+    .videos img,
+    .videos iframe {
+        width: 320px;
+    }
 }
